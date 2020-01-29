@@ -1,0 +1,38 @@
+Tehtava Gittiin tutustumiseksi:
+
+-- Kopioituasi repositoryn, tarkista sen tila
+	- git status
+
+-- Lisää repoon uusi tiedosto
+	- touch *tiedostonnimi.tiedostomuoto*
+	- tai vaihtoehtoisesti resurssienhallinnasta
+
+-- Tila?
+	- git status
+
+-- Alusta (stage) uusi tiedosto
+	- git add *tiedosto*
+	tai
+	- git add .
+
+-- Tila?
+	- git status
+
+-- Tee commit
+	- git commit -m "viesti"
+	- git status
+
+	Git ilmoittaa: 
+		"Your branch is ahead of 'origin/master' by 1 commit.
+  		(use "git push" to publish your local commits)"
+		
+		nothing to commit, working tree clean
+	
+	Tämä tarkoittaa, että paikallinen reposi on remote-repoa edellä.
+	Muutokset voi puskea remote-repoon git push -komennolla, mutta tämä vaatisi
+	github tunnukset ja oikeudet repoon.
+
+-- Tarkista repon loki
+	- git log
+
+-- Tee 3x committia, joissa lisäät tiedostoja ja/tai muokkaat vanhoja tiedostoja.
